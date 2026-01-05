@@ -24,3 +24,6 @@ permissions:
   spawnb0.spawn:
     description: Allows teleporting to spawn
     default: true
+  spawnb0.bypass:
+    description: Allows bypassing cooldown
+    default: op

@@ -59,7 +59,7 @@ public class SpawnCommand implements CommandExecutor {
                 return true;
             }
             
-            if (cooldownManager.hasCooldown(player)) {
+            if (!player.hasPermission("spawnb0.bypass") && cooldownManager.hasCooldown(player)) {
                 long remaining = cooldownManager.getRemainingCooldown(player);
                 String message = languageManager.getMessage("teleport-cooldown");
                 message = ColorUtils.replacePlaceholder(message, "seconds", String.valueOf(remaining));
@@ -72,7 +72,10 @@ public class SpawnCommand implements CommandExecutor {
             }
             
             teleportManager.teleportPlayer(player, spawnManager.getSpawn());
-            cooldownManager.setCooldown(player, configManager.getCooldown());
+            
+            if (!player.hasPermission("spawnb0.bypass")) {
+                cooldownManager.setCooldown(player, configManager.getCooldown());
+            }
             
             return true;
         } catch (Exception e) {

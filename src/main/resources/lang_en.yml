@@ -1,0 +1,11 @@
+messages:
+  no-permission: "<#FF0000>You don't have permission to execute this command!</#FF0000>"
+  spawn-set: "<#00FF00>Spawn point successfully set!</#00FF00>"
+  spawn-not-set: "<#FF0000>Spawn point is not set!</#FF0000>"
+  teleporting: "<#00FFFF>You will be teleported in <#FFD700>{seconds}</#FFD700> seconds...</#00FFFF>"
+  teleport-cancelled: "<#FF0000>Teleportation cancelled! Don't move!</#FF0000>"
+  teleport-success: "<#00FF00>You have been successfully teleported to spawn!</#00FF00>"
+  teleport-cooldown: "<#FF0000>Wait another <#FFD700>{seconds}</#FFD700> seconds before the next teleportation!</#FF0000>"
+  only-player: "<#FF0000>This command is only available to players!</#FF0000>"
+  usage-setspawn: "<#FFD700>Usage: /setspawn</#FFD700>"
+  usage-spawn: "<#FFD700>Usage: /spawn</#FFD700>"

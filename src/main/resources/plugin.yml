@@ -1,0 +1,26 @@
+name: SpawnB0
+version: '1.0'
+main: com.black.minecraft.spawnB0.SpawnB0
+api-version: '1.18'
+authors: [ b0b0b0 ]
+website: https://black-minecraft.com/
+
+commands:
+  setspawn:
+    description: Set the spawn point
+    usage: /<command>
+    permission: spawnb0.setspawn
+    permission-message: You don't have permission to use this command!
+  spawn:
+    description: Teleport to spawn
+    usage: /<command>
+    permission: spawnb0.spawn
+    permission-message: You don't have permission to use this command!
+
+permissions:
+  spawnb0.setspawn:
+    description: Allows setting the spawn point
+    default: op
+  spawnb0.spawn:
+    description: Allows teleporting to spawn
+    default: true

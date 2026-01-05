@@ -1,0 +1,4 @@
+spawn:
+  cooldown: 10
+  teleport-delay: 5
+  cancel-on-move: true
